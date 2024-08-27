@@ -1,0 +1,17 @@
+﻿@using DataLayer.Model_Hatalar
+@model List<JsonHata>
+
+<h2>Requirements</h2>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Code: @item.Description</li>
+    }
+</ul>
+<p>You will be redirected in 5 seconds...</p>
+
+<script type="text/javascript">
+    setTimeout(function () {
+        window.location.href = '@Url.Action("Index", "Home")';
+    }, 5000);
+</script>

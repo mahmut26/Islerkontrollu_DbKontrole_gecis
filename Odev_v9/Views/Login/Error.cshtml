@@ -1,0 +1,9 @@
+﻿<h2>Response Content</h2>
+<pre>@ViewBag.ErrorMessage</pre>
+<p>You will be redirected in 5 seconds...</p>
+
+<script type="text/javascript">
+    setTimeout(function () {
+        window.location.href = '@Url.Action("Index", "Home")';
+    }, 5000);
+</script>

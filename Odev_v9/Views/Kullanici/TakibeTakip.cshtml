@@ -1,0 +1,29 @@
+﻿@using DataLayer.Model_VM
+@model Link
+@{
+    ViewData["Title"] = "Kategori Ekle";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@* <form asp-action="Ekle" asp-controller="Kullanici" method="post">
+     <div class="form-group">
+        <label asp-for="sorgu1" class="control-label"></label>
+        <input asp-for="sorgu1" class="form-control" />
+        <span asp-validation-for="sorgu1" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="sorgu2" class="control-label"></label>
+        <input asp-for="sorgu2" class="form-control" />
+        <span asp-validation-for="sorgu2" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Ekle</button>
+</form> *@
+<h2>Categories</h2>
+<form method="post" action="/Kullanici/Ekle">
+    <div class="form-group">
+        <label for="Link">Select Category</label>
+        @Html.DropDownList("sorgu2",(SelectList)ViewBag.Categories, "Select a category", new { @class = "form-control" })
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

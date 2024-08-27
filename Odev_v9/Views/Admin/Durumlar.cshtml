@@ -1,0 +1,40 @@
+﻿@using DataLayer.Model_VM
+@model List<KullanicilarinDurumlari>
+
+<h2>Kullanıcıların Durumları</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Kullanıcı Adı</th>
+            <th>Email Onaylı</th>
+            <th>Admin</th>
+            <th>Yazar</th>
+            <th>Kullanıcı</th>
+            <th>Durum Değiştir</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.UserName</td>
+                <td>@item.EmailConfirmed</td>
+                <td>@item.IsAdmin</td>
+                <td>@item.IsYazar</td>
+                <td>@item.IsKullanici</td>
+                <td>
+                    <form method="get" asp-action="UpdateStatus" asp-controller="Admin">
+                        <input type="hidden" name="userName" value="@item.UserName" />
+                        <select name="statusType">
+                            <option value="IsAdmin">Admin</option>
+                            <option value="IsYazar">Yazar</option>
+                            <option value="IsKullanici">Kullanıcı</option>
+                        </select>
+                        <button type="submit">Değiştir</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

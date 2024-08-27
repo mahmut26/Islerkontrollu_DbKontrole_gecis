@@ -1,0 +1,23 @@
+﻿@using DataLayer.Model_VM
+@model MakaleViewModel
+
+@{
+    ViewBag.Title = "Create Makale";
+}
+
+<form>
+    <div class="form-group">
+        <label class="control-label">Başlık: @Model.Baslik</label>
+    </div>
+    <div class="form-group">
+        <label class="control-label">İçerik: @Model.Icerik</label>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Yazar ID: @Model.Yaz</label>
+    </div>
+    <div class="form-group">
+        <label class="control-label">Kategori ID: @Model.Cat</label>
+    </div>
+    
+</form>
+

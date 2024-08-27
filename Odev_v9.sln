@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Odev_v9", "Odev_v9\Odev_v9.csproj", "{3B2C5743-7FE7-42CD-B46A-F972A5122259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{7D520A74-D942-4D36-AFC8-C88CCAE4BB82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog_Api", "Blog_Api\Blog_Api.csproj", "{A1134CCC-49E7-495E-B70A-FDBFA60069D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B2C5743-7FE7-42CD-B46A-F972A5122259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B2C5743-7FE7-42CD-B46A-F972A5122259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B2C5743-7FE7-42CD-B46A-F972A5122259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B2C5743-7FE7-42CD-B46A-F972A5122259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D520A74-D942-4D36-AFC8-C88CCAE4BB82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D520A74-D942-4D36-AFC8-C88CCAE4BB82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D520A74-D942-4D36-AFC8-C88CCAE4BB82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D520A74-D942-4D36-AFC8-C88CCAE4BB82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1134CCC-49E7-495E-B70A-FDBFA60069D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1134CCC-49E7-495E-B70A-FDBFA60069D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1134CCC-49E7-495E-B70A-FDBFA60069D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1134CCC-49E7-495E-B70A-FDBFA60069D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F029BF26-D542-4518-947B-DA32C9AB17AB}
+	EndGlobalSection
+EndGlobal

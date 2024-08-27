@@ -1,0 +1,22 @@
+﻿@using DataLayer.Model_VM
+@model List<Sorgu>
+@{
+    ViewData["Title"] = "Makaleler";
+}
+
+<h1>Makaleler</h1>
+
+<h2>@ViewData["Title"]</h2>
+<h2>Categories</h2>
+  <ul>
+        @foreach (var category in Model)
+        {
+            
+            <li>@category.Name</li>
+        <form asp-action="Icerik" asp-controller="Yazar" method="get">
+            <input type="hidden" name="sorgu" value="@category.Name" />
+            <button type="submit">Submit</button>
+        </form>
+
+        }
+  </ul>
